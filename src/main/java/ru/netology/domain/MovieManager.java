@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 public class MovieManager {
     private Movie[] listMovies = new Movie[0];
     private int maxLimit = 10;
+
     public MovieManager(int maxLimit) {
         this.setMaxLimit(maxLimit);
     }
@@ -28,6 +29,7 @@ public class MovieManager {
     public Movie[] findAll() {
         return listMovies;
     }
+
     public Movie[] findReverseMaxLimit(int maxLimit) {
         int length = maxLimit;
         Movie[] tmp = new Movie[length];
