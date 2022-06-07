@@ -21,6 +21,7 @@ public class MovieManager {
     }
     public Movie[] findAll() {
         return repository.findAll();
+
     }
     public Movie[] findReverseMaxLimit(int maxLimit) {
         return repository.findReverseMaxLimit(maxLimit);
